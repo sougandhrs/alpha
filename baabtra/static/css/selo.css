@@ -1,0 +1,59 @@
+.sou{
+    color: blue;
+      height: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align:right ;  
+}
+h2{
+    color: goldenrod;
+    padding: 20;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: darkorchid;
+    text-decoration: dotted;
+    font-style: italic;
+    text-shadow: 30px;
+    touch-action: double-tap-zoom;
+
+
+
+}
+#som #archer,#h22{
+    color: rgb(31, 31, 46);
+
+}
+input[type="button"]{
+    color: blue;
+}
+#som,.sou,#archer{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: azure;
+    
+}
+h3{
+    
+    font-weight: 400;
+    font-style: italic;
+
+}
+#h33{
+    /* border:2px black solid ; */
+    border-color: black;
+    border-style: dashed;
+    border-radius:2px ;
+    width:100px ;
+    height: 100px;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+    
+}
+/* 
+img{
+    opacity: 0.2;
+} */
+
+img:hover{
+    opacity: 0.2;
+}
+

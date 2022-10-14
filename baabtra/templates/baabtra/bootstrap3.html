@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2" style="background-color: red;">1</div>
+            <div class="col-lg-2">2</div>
+            <div class="col-lg-2" style="background-color: blue;">3</div>
+            <div class="col-lg-2">4</div>
+            <div class="col-lg-2" style="background-color:green ;">5</div>
+            <div class="col-lg-2">6</div>
+            <div class="col-lg-2" style="background-color:green ;">7</div>
+           
+            
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12"></div>
+            <nav class="navbar fixed-top navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../../static/images/Facebookss.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="data:image/jpeg;base64,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 " class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>  
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis asperiores porro consequatur eaque, nihil facilis expedita ut quibusdam officiis perferendis?</h1>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                      </div>
+
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...hellloo hey
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>
